@@ -1,111 +1,84 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rangga | Flutter Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #e3f2fd, #ffffff);
-      color: #212529;
-    }
-    header {
-      background-color: #02569B;
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-    }
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 2.5rem;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #ff9800;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    a.button:hover {
-      background-color: #fb8c00;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #555;
-      padding: 2rem;
-      border-top: 1px solid #ddd;
-    }
-    .socials {
-      margin-top: 1.5rem;
-    }
-    .socials a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #02569B;
-      font-weight: 600;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Rangga – Flutter Developer</h1>
-    <p>Membangun aplikasi mobile dengan Flutter & mendukung developer baru memilih hosting terbaik</p>
-    <div class="socials">
-      <a href="https://www.youtube.com/@ranggadev" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@ranggadev" target="_blank">TikTok</a>
-      <a href="https://www.instagram.com/ranggadev" target="_blank">Instagram</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rangga | Flutter Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <img src="images/logo.png" alt="Rangga Logo" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#affiliate">Affiliate</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <section>
-      <h2>👨‍💻 Tentang Saya</h2>
-      <p>Saya adalah web & mobile developer, dengan fokus utama pada Flutter. Saya sering membantu pemula membangun aplikasi dari nol hingga siap publish. Melalui media sosial dan konten saya, saya berbagi tutorial, review hosting, serta cara membangun aplikasi dari awal.</p>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm Rangga 👋</h1>
+        <p>A Flutter Mobile Developer who builds clean & fast apps</p>
+        <a href="#projects" class="btn-primary">View My Work</a>
+      </div>
     </section>
 
-    <section>
-      <h2>🚀 Rekomendasi Hosting untuk Developer Flutter</h2>
-      <p>Saya merekomendasikan <strong>Hostinger</strong> untuk backend REST API, file storage, dan custom domain saat membangun aplikasi Flutter (terutama dengan Laravel atau Node.js).</p>
-      <a href="https://www.hostg.xyz/affiliatelinkmu" target="_blank" class="button">Dapatkan Diskon Hosting</a>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I specialize in building mobile apps using Flutter. I love helping developers deploy their backend using Laravel or Firebase, and I share hosting tips as an affiliate.
+        </p>
+      </div>
     </section>
 
-    <section>
-      <h2>📚 Panduan dan Tutorial</h2>
-      <ul>
-        <li>Cara menghubungkan Flutter dengan Laravel API di Hostinger</li>
-        <li>Menggunakan Firebase Auth + Hosting dengan Flutter</li>
-        <li>Tips deploy backend ke VPS untuk aplikasi Flutter</li>
-        <li>Integrasi Payment Gateway di Flutter + Laravel</li>
-      </ul>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- Example Project Card -->
+          <div class="project-card">
+            <img src="images/project1.jpg" alt="Project 1" />
+            <h3>Employee Attendance App</h3>
+            <p>Built with Flutter + Firebase with selfie & location lock features.</p>
+          </div>
+          <!-- Add more project cards here -->
+        </div>
+      </div>
     </section>
-  </main>
 
-  <footer>
-    &copy; 2025 Rangga | Dibuat dengan GitHub Pages. Ikuti saya di YouTube, TikTok, dan Instagram.
-  </footer>
-</body>
+    <section id="affiliate" class="section highlight">
+      <div class="container">
+        <h2>Recommended Hosting</h2>
+        <p>I recommend Hostinger for hosting your Laravel API or admin panel. Great performance and affordable.</p>
+        <a href="https://www.hostg.xyz/affiliatelinkmu" target="_blank" class="btn-secondary">Get Hosting</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Follow Me</h2>
+        <p>Check out my content and stay in touch:</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/@ranggadev" target="_blank">YouTube</a>
+          <a href="https://www.tiktok.com/@ranggadev" target="_blank">TikTok</a>
+          <a href="https://www.instagram.com/ranggadev" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Rangga | Made with ❤️ using HTML, CSS, JS</p>
+      </div>
+    </footer>
+  </body>
 </html>
